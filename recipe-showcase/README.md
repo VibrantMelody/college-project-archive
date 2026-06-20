@@ -12,7 +12,7 @@
 <p align="center"> A simple interactive recipe landing page that highlights three dishes with animated cards and clickable recipe details. This project is designed to show a polished frontend experience using only static assets and vanilla JavaScript.</p>
 
 <p align="center">
-  <img src="../assets/recipe-showcase.png" alt="Recipe Showcase Screenshot" width="300" />
+  <img src="../repo-assets/recipe-showcase.png" alt="Recipe Showcase Screenshot" width="300" />
 </p>
 
 ## ✨Features

@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-    <img alt="Project image" height="300px" src="../assets/holiday-snowfall.png">
+    <img alt="Project image" height="300px" src="../repo-assets/holiday-snowfall.png">
 </p>
 
 <p align="center">A festive static experience built as a holiday assignment, featuring animated snowfall, a seasonal scene, and an audio toggle button.</p>
