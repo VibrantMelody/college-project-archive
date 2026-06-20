@@ -1,20 +1,36 @@
-# College Projects Collection
+<div align="center">
+  <h1>College Projects Archive</h1>
+  <p>A personal collection of college assignments, web builds, and small projects.</p>
+</div>
 
-A small personal archive of college assignments, class projects, and experiments. It’s mostly a mix of web builds, C# apps, and a few bigger course projects that I actually enjoyed putting together.
+<p align="center">
+  <img alt="Archive" src="https://img.shields.io/badge/Archive-Learning-blue?style=for-the-badge" />
+  <img alt="Student Projects" src="https://img.shields.io/badge/Category-Student%20Work-green?style=for-the-badge" />
+</p>
 
-## What’s inside
+<p align="center">This repo is a lightweight archive of college work, starting with a polished frontend showcase and growing over time.</p>
 
-- `Canvas Past Assignments/` — earlier coursework with HTML, CSS, and JavaScript projects.
-- `TravelPlanner/` — a desktop/mobile travel planner app built with C# and Xamarin.
-- `TSparks/` — a modern frontend project powered by Vite and React.
+## 📁 Included Project
 
-## Why this repo
+- `recipe-showcase/` — a static HTML, CSS, and JavaScript recipe gallery with animated cards, recipe details, and interactive UI.
 
-I wanted one place for the stuff I made in college, so I could look back, share it quickly, and keep the good ideas alive.
+## 🚀 Coming Soon
 
-## Notes
+- More web projects and frontend experiments
+- C# apps and desktop/mobile prototypes
+- Portfolio-ready examples with clean code and documentation
 
-- Most projects are student work, so they’re clean enough to read but still learning-first.
-- If you want to explore, start in `Canvas Past Assignments/` for web stuff, and `TravelPlanner/` for the bigger app.
+## 🔍 Explore the repo
 
-> A friendly archive of learning, one project at a time.
+1. Open `recipe-showcase/index.html` in your browser.
+2. Browse the recipe cards and use the interactive details.
+3. Inspect `recipe-showcase/script.js` for the app logic.
+4. Review `recipe-showcase/style.css` for the visual design.
+
+## 📝 Notes
+
+- This collection is a work in progress.
+- New projects will be added later.
+- The current folder is built to be simple, static, and easy to run.
+
+> A friendly archive of college work, growing one project at a time.
