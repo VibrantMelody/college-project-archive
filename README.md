@@ -10,9 +10,13 @@
 
 <p align="center">This repo is a lightweight archive of college work, starting with a polished frontend showcase and growing over time.</p>
 
-## 📁 Included Project
+## 📁 Included Projects
 
-- `recipe-showcase/` — a static HTML, CSS, and JavaScript recipe gallery with animated cards, recipe details, and interactive UI.
+- `recipe-showcase/` — a static HTML, CSS, and JavaScript recipe gallery with animated cards, recipe details, and interactive UI. Features smooth entrance animations and clickable recipe interactions.
+
+- `Holiday Snowfall/` (A3-Jeol-Rai) — an interactive winter welcome screen with animated snowfall, Santa imagery, and holiday music playback. Includes dynamic snow generation and a festive splash animation.
+
+- `great-wall-of-china/` — an educational website about the Great Wall with multi-page navigation, animated image galleries showcasing different seasons, and an earth-tone color scheme. Features smooth page transitions and hover effects.
 
 ## 🚀 Coming Soon
 
@@ -20,12 +24,11 @@
 - C# apps and desktop/mobile prototypes
 - Portfolio-ready examples with clean code and documentation
 
-## 🔍 Explore the repo
+## 🔍 Explore the projects
 
-1. Open `recipe-showcase/index.html` in your browser.
-2. Browse the recipe cards and use the interactive details.
-3. Inspect `recipe-showcase/script.js` for the app logic.
-4. Review `recipe-showcase/style.css` for the visual design.
+1. **Recipe Showcase** — Open `recipe-showcase/index.html` to browse interactive recipe cards.
+2. **Holiday Snowfall** — Open `A3-Jeol-Rai/index.html` for a festive winter experience with music.
+3. **Great Wall of China** — Open `great-wall-of-china/index.html` to explore seasonal galleries and educational content.
 
 ## 📝 Notes
 

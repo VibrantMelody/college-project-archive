@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project for Jeol</title>
+
+        <link rel="stylesheet" href="styles/style.css">
+        <script defer src="script.js"></script>
+
+        <!-- Style Script Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Reem+Kufi&family=Style+Script&display=swap" rel="stylesheet">
+
+        <!-- Open Sans Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans:wght@300&family=Reem+Kufi&display=swap" rel="stylesheet">
+
+        <!-- Reem Kufi Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <span class="hidden1">The Great Wall Of China</span>
+            <nav class="hidden1">
+                <button>Home</button>
+                <button>Gallery</button>
+                <button>Contacts</button>
+            </nav>
+        </header>
+        <aside></aside>
+        <section>
+            <div class="home">
+                <p class="hidden1">The Great Wall of China, known as "长城" (Chángchéng) in Chinese, stands as an iconic testament to human ingenuity and perseverance. Spanning approximately 13,170 miles (21,196 kilometers) across northern China, this ancient fortification is a marvel of architecture and engineering. Built over several dynasties, primarily during the Ming Dynasty (1368–1644), the wall served as a formidable defense system against invasions by nomadic tribes. Its purpose extended beyond military defense, playing a role in border regulation, trade, and immigration control. Comprising various walls, watchtowers, and fortifications, the Great Wall winds through diverse landscapes, including mountains, deserts, and grasslands. The cultural significance of the Great Wall is immense, symbolizing China's rich history and its enduring commitment to protection and unity. Today, it stands as one of the most iconic and visited landmarks globally, attracting millions of visitors each year who marvel at its historical importance and breathtaking vistas.</p>
+                <div class="hidden1" id="imagebox">
+                    <button onclick="toggleAnimation(container, button)"><i class="nf nf-cod-play"></i><span>Click to play animation</span></button>
+                    <div id="imagecontainer" style="background-image: url('images/homepage.jpg');"></div>
+                </div>
+            </div>
+            <div class="gallery">
+                <p>The great wall during different seasons: </p>
+                <div id="gallerybox">
+                    <div class="image hidden" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,.9)), url('images/1.jpg');"><span>Spring</span></div>
+                    <div class="image hidden" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,.9)), url('images/2.jpg');"><span>Fall</span></div>
+                    <div class="image hidden" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,.9)), url('images/3.jpg');"><span>Winter</span></div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="hidden2" id="contactinfo">
+                    <p>Contact Info</p>
+                    <ul>
+                        <li>Name: Jeol Rai</li>
+                        <li>Student ID: 4542979</li>
+                        <li>Email: jeol.rai2979@nctorontostudents.ca</li>
+                    </ul>
+                    <p><a href="mailto:someone@example.com">Send an Email here</a></p>
+                </div>
+                <div id="line"></div>
+                <div class="hidden2" id="sidebar">
+                    <p>The three sites that helped me learn HTML, CSS and Js immensely are: </p>
+                    <ul>
+                        <li>W3Schools</li>
+                        <li>FreeCodeCamp</li>
+                        <li>& MDN web docs itself</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div></div>
+        </section>
+        <footer></footer>
+    </body>
+</html>

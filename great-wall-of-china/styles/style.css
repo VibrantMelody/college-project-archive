@@ -1,0 +1,343 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background: #11111b;
+    --offwhite: #EEEEEE;
+    --offgray: #878787;
+}
+
+@font-face {
+    font-family: "Savana";
+    src: url('../fonts/SavanaInlineGridGrunge.ttf');
+}
+
+@keyframes pan-image {  
+0% {
+    background-position: 0% 50%;
+    background-size: 150%;
+}
+
+40% {
+    background-position: 50% 50%;
+    background-size: 200%;
+}
+
+50% {
+    background-position: 65% 50%;
+    background-size: 500%;
+}
+
+60% {
+    background-position: 84% 83%;
+    background-size: 300%;
+}
+
+90% {
+    background-position: 10% 50%;
+    background-size: 150%;
+}
+
+100% { /* -- View 5 -- */
+    background-position: 0% 50%;
+    background-size: 150%;
+}
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-200%);
+}
+
+.hidden1 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.hidden2 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(200%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    color: white;
+    font-family: open sans;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+}
+
+header {
+    height: 8%;
+    width: 99.5%;
+    color: black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    gap: 1rem;
+
+    background: url('../images/cover.jpg');
+    background-size: cover;
+    background-position: 50% 29%;
+}
+
+header span {
+    font-family: savana;
+    font-size: 3.6rem;
+    pointer-events: none;
+    transition: 1s ease;
+}
+
+nav {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    transition: 1s ease;
+    transition-delay: 200ms;
+}
+
+nav button{
+    all: unset;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+section {
+    height: 91%;
+    width: 99.5%;
+    border-radius: 10px;
+    background-color: var(--background);
+
+    overflow: hidden;
+    position: relative;
+}
+
+.home, .gallery, .contact {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+    position: absolute;
+    transition: 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+}
+
+.home > p {
+    width: 60%;
+    text-align: center;
+    font-size: 1.3rem;
+    transition: 1s ease;
+    transition-delay: 400ms;
+}
+
+.home > #imagebox {
+    height: 60%;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+    transition: 1s ease;
+    transition-delay: 600ms;
+}
+
+.home > #imagebox > button {
+    all: unset;
+
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 10px;
+
+    font-family: Reem Kufi;
+    padding: 0 1rem;
+    background-color: #1e1e2e;
+}
+
+.home > #imagebox > button > i {
+    font-size: 1rem;
+    margin-right: .3rem;
+}
+
+.home > #imagebox > #imagecontainer {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+
+    background-position: 0% 50%;
+    background-size: 150%;
+    animation: pan-image 15s linear;
+    animation-play-state: paused;
+}
+
+.gallery {
+    transform: translateX(100vw);
+    background: var(--background);
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+
+.gallery > p  {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.gallery > #gallerybox {
+    width: 60%;
+    height: 60%;
+
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+}
+
+.gallery > #gallerybox > .image {
+
+    width: 30%;
+    height: 90%;
+    border-radius: 10px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+
+    display: flex;
+    justify-content: center;
+    place-items: end;
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#gallerybox > .image:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+#gallerybox > .image:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+@keyframes size {
+0% {background-size: 100%;}
+70% {background-size: 110%;}
+100% {background-size: 100%;}
+    
+}
+#gallerybox > .image:hover {
+    animation: size 400ms linear;
+}
+
+#gallerybox > .image > span {
+    font-family: style script;
+    font-size: 1.9rem;
+}
+
+.contact {
+    background: var(--background);
+    transform: translateX(100vw);
+    position: absolute;
+
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+}
+
+#contactinfo {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: var(--offwhite);
+
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+
+    transition: 1s ease;
+}
+
+#contactinfo > p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#contactinfo p {
+    padding: .5rem 0;
+    text-align: center;
+}
+#contactinfo > p > a {
+    color: #fe640b;
+    font-weight: bold;
+}
+
+#contactinfo ul {
+    text-align: center;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#contactinfo ul li {
+    margin-bottom: .5rem;
+}
+
+#line {
+    height: 90%;
+    border: 1px dashed var(--offwhite);
+}
+
+#sidebar {
+    width: 30%;
+    height: 30%;
+
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--offwhite);
+
+    transition: 1s ease;
+}
+
+#sidebar p {
+    padding: .5rem 0;
+}
+
+#sidebar ul {
+    list-style-position: inside;
+    padding: 0 .5rem;
+}
+
+#sidebar ul li {
+    margin-bottom: .5rem;
+    border-bottom: 2px solid var(--offgray);
+}
+
+.selectedTab {
+    background-color: black;
+    color: white;
+    padding: 0 1rem;
+    border-radius: 10px;
+}
+
